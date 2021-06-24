@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="manisa, manisa şehzadeler, aile sağlık merkezi, 
+    asm, sağlık ocağı, şehzadeler 4 nolu aile sağlık merkezi, şehzadeler 4 nolu sağlık ocağı,
+    nükhet salim yavaş, aile hekimliği, manisa sağlık ocakları">
+  <meta name="description" content="Manisa Şehzadeler 4 nolu Aile Sağlığı Merkezi">
+  <meta name="generator" content="aile sağlığı merkezi, sağlık ocağı, manisa şehzadeler 
+    sağlık, aile hekimliği">
+  <title>Manisa Şehzadeler 4 No'lu Aile Sağlığı Merkezi</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="../jquerry.min.js"></script>
+  <link rel="stylesheet" href="stil2.css">
+  <style>
+    #logo {
+      height: 80px;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    #randevu,
+    #eczane {
+      width: auto;
+      height: 65px;
+      font-size: 21px;
+    }
+
+    footer {
+      padding-top: 20px;
+      font-size: large;
+      text-align: center;
+
+      background: rgb(56, 56, 56);
+      color: floralwhite;
+    }
+
+    .table {
+      font-size: large;
+      font-weight: bold;
+      text-align: center;
+      margin:60px;
+      margin-bottom:20px;
+    }
+
+    .doktor {
+  
+      width: 100%;
+      margin:60px;
+      position: relative;
+      display:flex;
+      justify-content: center;
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      -moz-transform: scale(1);
+      transition: all .2s ease-in;
+      -moz-transition: all .2s ease-in;
+      -webkit-transition: all .2s ease-in;
+      -ms-transition: all .2s ease-in;
+    }
+    .doktor:hover{
+      z-index: 2;
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      transform: scale(1.2);
+      cursor:pointer;
+    }
+
+    h1 {
+      background:rgba(0, 0, 0);
+      display:flex;
+      justify-content: center;
+      align-items: baseline;
+      color: yellow;
+    }
+
+    .doc {
+      background: rgba(34, 31, 32, 0.74);
+      border-radius: 10px;
+      width: 250px;
+      height: 30px;
+      color: white;
+      text-align: center;
+    }
+
+    #ebe{
+      margin-left:100px;
+    
+    }
+
+    #foot1,
+    #foot3 {
+      padding-top: 50px;
+    }
+
+    #foot4 {
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="container-fluid">
+      <div class="logo">
+        <a href="index.html"><img src="manisa.png" alt="" id="logo"></a>
+      </div>
+      <div id="mainListDiv" class="main_list">
+        <ul class="navlinks">
+          <li><a href="https://www.mhrs.gov.tr/vatandas/#/" id="randevu" class="btn btn-success"
+              title="Online randevu almak için tıklayınız"><strong><u>ONLINE RANDEVU</u></strong></a></li>
+          <li><a href="https://www.manisaeczaciodasi.org.tr/nobetci-eczaneler" id="eczane"
+              class="btn btn-danger"><strong><u>NÖBETÇİ ECZANE</u></strong></a></li>
+          <li><a href="hakkımızda.html"><u><b>HAKKIMIZDA</b></u></a></li>
+          <li><a href="personelimiz.html"><u><b>PERSONELİMİZ</b></u></a></li>
+          <li><a href="iletişim.html"><u><b>İLETİŞİM</b></u></a></li>
+        </ul>
+      </div>
+
+      <span class="navTrigger">
+        <i></i>
+        <i></i>
+        <i></i>
+      </span>
+    </div>
+  </nav>
+
+  <section class="home">
+  </section>
+  <article>
+    <div id="bir" class="container-fluid">
+      <div class="row">
+        <div class="doktor d-inline col-xl-5 col-lg-6 col-md-8 col-sm-10">
+          <img class="w-100" src="drmeh.jpg" alt="">
+          <h1>DR. MEHMET ALİ TÜYSÜZ</h1>
+
+        </div>
+        <div class="doktor d-inline col-xl-4 col-lg-6 col-md-7 col-sm-8">
+          <table class="table table-bordered table-striped table-hover table-danger">
+            <tr>
+              <td colspan="3">DR. MEHMET ALİ TÜYSÜZ ÇALIŞMA SAATLERİ</td>
+            </tr>
+            <tr>
+              <td>PAZARTESİ</td>
+              <td>08:00 - 12:00</td>
+              <td>13:00 - 17:00</td>
+            </tr>
+            <tr>
+              <td>SALI</td>
+              <td>* 10:00 - 15:00 *</td>
+              <td>* 16:00 - 19:00 *</td>
+            </tr>
+            <tr>
+              <td>ÇARŞAMBA</td>
+              <td>08:00 - 12:00</td>
+              <td>13:00 - 17:00</td>
+            </tr>
+            <tr>
+              <td>PERŞEMBE</td>
+              <td>08:00 - 12:00</td>
+              <td>13:00 - 17:00</td>
+            </tr>
+            <tr>
+              <td>CUMA</td>
+              <td>08:00 - 12:00</td>
+              <td>13:00 - 17:00</td>
+            </tr>
+          </table>
+          <h1 id="ebe">HEMŞİRE TUĞBA YILDIRIM</h1>
+        </div>
+      </div>
+    </div>
+    <div id="bir" class="container-fluid">
+      <div class="row">
+        <div class="doktor d-inline col-xl-5 col-lg-6 col-md-8 col-sm-10">
+          <img class="w-100" src="drsur.jpg" alt="">
+          <h1>DR. SURHAP KORKMAZ</h1>
+
+        </div>
+        <div class="doktor d-inline col-xl-4 col-lg-6 col-md-7 col-sm-8">
+          <table class="table table-bordered table-striped table-hover table-danger">
+            <tr>
+              <td colspan="3">DR. SURHAP KORKMAZ ÇALIŞMA SAATLERİ</td>
+            </tr>
+            <tr>
+              <td>PAZARTESİ</td>
+              <td>08:00 - 12:00</td>
+              <td>13:00 - 17:00</td>
+            </tr>
+            <tr>
+              <td>SALI</td>
+              <td>08:00 - 12:00</td>
+              <td>13:00 - 17:00</td>
+            </tr>
+            <tr>
+              <td>ÇARŞAMBA</td>
+              <td>08:00 - 12:00</td>
+              <td>13:00 - 17:00</td>
+            </tr>
+            <tr>
+              <td>PERŞEMBE</td>
+              <td>* 10:00 - 15:00 *</td>
+              <td>* 16:00 - 19:00 *</td>
+            </tr>
+            <tr>
+              <td>CUMA</td>
+              <td>08:00 - 12:00</td>
+              <td>13:00 - 17:00</td>
+            </tr>
+          </table>
+          <h1 id="ebe">EBE ÇİĞDEM KOCAHASAN</h1>
+        </div>
+      </div>
+    </div>
+    <div id="bir" class="container-fluid">
+      <div class="row">
+        <div class="doktor d-inline col-xl-5 col-lg-6 col-md-8 col-sm-10">
+          <img class="w-100" src="drömer.jpg" alt="">
+          <h1>UZM. DR. ÖMER ÖZTÜRK</h1>
+
+        </div>
+        <div class="doktor d-inline col-xl-4 col-lg-6 col-md-7 col-sm-8">
+          <table class="table table-bordered table-striped table-hover table-danger">
+            <tr>
+              <td colspan="3">UZM. DR. ÖMER ÖZTÜRK ÇALIŞMA SAATLERİ</td>
+            </tr>
+            <tr>
+              <td>PAZARTESİ</td>
+              <td>08:00 - 12:00</td>
+              <td>13:00 - 17:00</td>
+            </tr>
+            <tr>
+              <td>SALI</td>
+              <td>08:00 - 12:00</td>
+              <td>13:00 - 17:00</td>
+            </tr>
+            <tr>
+              <td>ÇARŞAMBA</td>
+              <td>* 10:00 - 15:00 *</td>
+              <td>* 16:00 - 19:00 *</td>
+            </tr>
+            <tr>
+              <td>PERŞEMBE</td>
+              <td>08:00 - 12:00</td>
+              <td>13:00 - 17:00</td>
+            </tr>
+            <tr>
+              <td>CUMA</td>
+              <td>08:00 - 12:00</td>
+              <td>13:00 - 17:00</td>
+            </tr>
+          </table>
+          <h1 id="ebe">EBE YASEMİN BAYRAKTAROĞLU</h1>
+        </div>
+      </div>
+    </div>
+    <div id="bir" class="container-fluid">
+      <div class="row">
+        <div class="doktor d-inline col-xl-5 col-lg-6 col-md-8 col-sm-10">
+          <img class="w-100" src="drmus.jpg" alt="">
+          <h1>DR. MUSTAFA ÇÖLLÜ</h1>
+
+        </div>
+        <div class="doktor d-inline col-xl-4 col-lg-6 col-md-7 col-sm-8">
+          <table class="table table-bordered table-striped table-hover table-danger">
+            <tr>
+              <td colspan="3">DR. MUSTAFA ÇÖLLÜ ÇALIŞMA SAATLERİ</td>
+            </tr>
+            <tr>
+              <td>PAZARTESİ</td>
+              <td>08:00 - 12:00</td>
+              <td>13:00 - 17:00</td>
+            </tr>
+            <tr>
+              <td>SALI</td>
+              <td>08:00 - 12:00</td>
+              <td>13:00 - 17:00</td>
+            </tr>
+            <tr>
+              <td>ÇARŞAMBA</td>
+              <td>08:00 - 12:00</td>
+              <td>13:00 - 17:00</td>
+            </tr>
+            <tr>
+              <td>PERŞEMBE</td>
+              <td>08:00 - 12:00</td>
+              <td>13:00 - 17:00</td>
+            </tr>
+            <tr>
+              <td>CUMA</td>
+              <td>* 10:00 - 15:00 *</td>
+              <td>* 16:00 - 19:00 *</td>
+            </tr>
+
+
+          </table>
+          <h1 id="ebe">EBE İLKAY ARSLAN</h1>
+        </div>
+      </div>
+    </div>
+    <div id="bir" class="container-fluid">
+      <div class="row">
+        <div class="doktor d-inline col-xl-5 col-lg-6 col-md-8 col-sm-10">
+          <img class="w-100" src="dryıl.jpg" alt="">
+          <h1>DR. YILMAZ HACIAĞA</h1>
+
+        </div>
+        <div class="doktor d-inline col-xl-4 col-lg-6 col-md-7 col-sm-8">
+          <table class="table table-bordered table-striped table-hover table-danger">
+            <tr>
+              <td colspan="3">DR. YILMAZ HACIAĞA ÇALIŞMA SAATLERİ</td>
+            </tr>
+            <tr>
+              <td>PAZARTESİ</td>
+              <td>* 10:00 - 15:00 *</td>
+              <td>* 16:00 - 19:00 *</td>
+            </tr>
+            <tr>
+              <td>SALI</td>
+              <td>08:00 - 12:00</td>
+              <td>13:00 - 17:00</td>
+            </tr>
+            <tr>
+              <td>ÇARŞAMBA</td>
+              <td>08:00 - 12:00</td>
+              <td>13:00 - 17:00</td>
+            </tr>
+            <tr>
+              <td>PERŞEMBE</td>
+              <td>08:00 - 12:00</td>
+              <td>13:00 - 17:00</td>
+            </tr>
+            <tr>
+              <td>CUMA</td>
+              <td>08:00 - 12:00</td>
+              <td>13:00 - 17:00</td>
+            </tr>
+
+
+          </table>
+          <h1 id="ebe">EBE NİHAN ŞENGÜLER ARIK</h1>
+        </div>
+      </div>
+    </div>
+    
+  </article>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="d-inline col-md-2 col-lg-3 col-xl-4  float-left" id="foot1">
+          <img src="manisa.png" width="300px" alt="">
+        </div>
+
+        <div class="d-inline col-md-6 col-lg-5 col-xl-4 float-left" id="foot2">
+          <p id="adres">Manisa Şehzadeler Nükhet-Salim Yavaş 4 No'lu Aile Sağlığı Merkezi <br>
+            Adnan Menderes Mahallesi Turgutlu Caddesi <br>
+            ŞEHZADELER/MANİSA
+            <br> Tel:0236 232 45 33
+          </p>
+
+        </div>
+
+
+        <div class="d-inline col-md-2 col-lg-3 col-xl-4" id="foot3">
+          <img src="manisa.png" width="300px" alt="">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row" id="foot4">
+        <p>
+        <h5>yusufdemir copyright © 2021 tüm hakları saklıdır.</h5>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+  <script>
+    $('.navTrigger').click(function () {
+      $(this).toggleClass('active');
+      console.log("Clicked menu");
+      $("#mainListDiv").toggleClass("show_list");
+      $("#mainListDiv").fadeIn();
+    });
+    $(window).scroll(function () {
+      if ($(document).scrollTop() > 50) {
+        $('.nav').addClass('affix');
+        console.log("OK");
+      } else {
+        $('.nav').removeClass('affix');
+      }
+    });
+
+
+
+
+
+  </script>
+
+
+
+</body>
+
+</html>
