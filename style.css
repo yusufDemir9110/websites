@@ -1,0 +1,493 @@
+/*defining the blue and black colors that will be used most*/
+:root{
+    --color-blue:rgb(64, 86, 255);
+    --color-black:rgb(15, 15, 15);
+  }
+  /*body and body:after*/
+  body{
+    font-family:"Helvetica",sans-serif;
+    margin:0;
+    text-align:justify;
+    box-sizing:border-box;
+  }
+  body::after{
+    content:"";
+    background-image:url(https://i.redd.it/7g2yyjzoqki21.jpg);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:130%;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    position:fixed;
+    opacity:0.8;
+    z-index:-1;
+  }
+  /*for responsive design rowCenter and rowSpaceBetween*/
+  .rowCenter{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .rowSpaceBetween{
+    display:flex;
+    justify-content:space-between;
+  }
+  nav{
+    position:fixed;
+    height:55px;
+    width:100%;
+    background-color: var(--color-black);
+    z-index:5;
+  }
+  .logo{
+    font-family:"impact",sans-serif;
+    letter-spacing:4px;
+    font-size:1.5em;
+    margin-left:40px;
+    color:white;
+  }
+  .logoImage{
+    width:33px;
+    background-color:var(--color-blue);
+    padding:2px;
+    border:3px ridge gold;
+    border-radius:50%;
+    margin-right:10px;
+  }
+  .menuMainItems{
+    font-weight:600;
+    margin-top:12px;
+    margin-right:20px;
+  }
+  nav ul{
+    list-style:none;
+    margin:0px;
+    padding-left:0;
+  }
+  nav li{
+    color:var(--color-blue);
+    display:block;
+    float:left;
+    padding:10px 0 10px 0;
+    min-width:150px;
+    position:relative; 
+  }
+  .subUl{
+    display:none; 
+  }
+  .menuSubItems{
+      padding-left:15px;
+   } 
+  .menuSubItems:hover li{
+    animation-name:slideLi-x, slideLi-y;
+    animation-delay:0s,0.5s;
+    animation-duration:1s,1s;
+    animation-iteration-count:1,1;
+    animation-fill-mode:forwards,forwards;
+    animation-timing-function:ease-out,ease-out;
+  }
+  /*Animations are for nav lists items*/
+  @keyframes slideLi-x{
+    from{left:0}
+    to{left:120px}
+  }
+  @keyframes slideLi-y{
+    from{top:0}
+    to{top:-15px;padding-bottom:0}
+  }
+  .menuSubItems:hover ul,
+  .subUl:hover{
+    visibility:visible;
+    display:block;
+    animation-name:slideUl;
+    animation-duration:0.5s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    animation-timing-function:ease-out;
+  }
+  @keyframes slideUl{
+    from{padding-right:0}
+    to{padding-right:100px}
+  }
+  .menuSubItems:hover{
+    display:block;
+    background-color:var(--color-black);
+    border-radius:10px;
+  }
+  ul.subUl li{
+    clear:both;
+    width:100%;
+  }
+  a{
+    text-decoration:none;
+    color:var(--color-blue);
+  }
+  a:hover{
+    text-decoration:underline;
+    color:gold;
+  }
+  #homeImage{
+    width:100%;
+    height:700px;
+    background-image:url("https://www.defenceturkey.com/files/content/5e949831e240d.jpg");
+    background-size:cover;
+    background-position:bottom;
+    border-bottom:10px solid black;
+  }
+  /*this is for darken the homeImage*/
+  #homeImage::after{
+    content:"";
+    position:absolute;
+    top:0;
+    width:100%;
+    height:700px;
+    background-color:black;
+    opacity:0.3;
+  }
+  /*homeImageText animations*/
+  #homeImageText{
+    position:absolute;
+    top:50px;
+    left:50px;
+    color:white;
+    font-size:2.5em;
+    font-family:lucida handwriting;
+    font-weight:800; 
+  }
+  #homeImageText p{
+    transition-duration:3s;
+    opacity:0;
+  }
+  #homeImageText p:nth-child(2),p:nth-child(4){
+    position:relative;
+    left:80px;
+  }
+  #homeImageText>p:nth-child(4){
+    color:rgb(237, 36, 0);
+  }
+  /*js onload fuction is better for this animation. But we don't use js now*/
+  html:hover #homeImageText p:nth-child(1){
+    opacity:1;
+    transition-duration:ease;
+    transform:scale(1.1);
+  }
+  html:hover #homeImageText p:nth-child(2){
+    opacity:1;
+    transition-duration:ease;
+    transition-delay:1s;
+    transform:scale(1.1);
+  }
+  html:hover #homeImageText p:nth-child(3){
+    opacity:1;
+    transition-duration:ease;
+    transition-delay:2.5s;
+    transform:scale(1.1);
+  }
+  html:hover #homeImageText p:nth-child(4){
+    opacity:1;
+    transition-duration:ease;
+    transition-delay:4.5s;
+    transform:scale(1.1);
+  }
+  p{
+    text-indent:25px;
+  }
+  .container{
+    background-color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:35px 30px 30px 30px;
+    margin:20px;
+    border:3px solid black;
+    border-top:10px solid black;
+    border-radius:5px;
+  }
+  
+  #fleetHead{
+    background-color:var(--color-blue);
+    padding: 10px 10px 10px 40px;
+    width:40%;
+    position:relative;
+    top:77px;
+    left:23px;
+    border-radius:0 0 15px 0;
+  }
+  main div{
+    padding:20px;
+  }
+  main td{
+    overflow:hidden;
+  }
+  main td div{
+    width:250px;
+    height:160px;
+    background-size:cover; 
+    background-position:center;
+    border-radius:10px;
+    transition-duration:1s;
+  }
+  main td div:hover{
+    transition-duration:linear;
+    transform:scale(1.1);
+  }
+  .generalInfo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  
+  .generalInfo div{
+    width:50%;
+    padding:20px;
+  }
+  .tableDiv{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .tableDiv table{
+    border: 3px solid black;
+    border-radius:5px;
+  }
+  .tableDiv th{
+    background-color:var(--color-blue);
+    text-align:center;
+    padding:5px;
+    border-radius:5px;
+  }
+  .tableDiv td{
+    border:1px solid white;
+    padding:5px;
+    background-color:lightblue;
+    border-radius:5px;
+  }
+  .cardxContainer{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    column-gap:5%;
+  }
+  /*cards animations*/
+  .cardx{
+    margin:30px 0 30px 0;
+    height:400px;
+    width:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:130%;
+    border-radius:25px;
+    transition-duration:1s;
+    overflow:hidden;
+  }
+  .cardx:hover{
+    background-position:center;
+    background-size:150%;
+    transition-duration:1s ease;
+  }
+  .cardxName{
+    position:relative;
+    top:0;
+    left:0;
+    padding-bottom:2px;
+    width:100%;
+    height:40px;
+    text-align:center;
+    border-top:3px solid black;
+    border-bottom:3px solid black;
+    border-radius: 1em 1em 0 0;
+    color:white;
+    font-size:1.3em;
+    font-weight:600;
+    background-color:black;
+  }
+  .cardxName img{
+    position:relative;
+    top:7px;
+    left:0;
+    margin: 0 10px;
+    background-color:darkblue;
+    border:2px solid gold;
+    border-radius:50%;
+  }
+  .cardxDescBg{
+    background-image:linear-gradient(to bottom, black,blue,darkblue);
+    width:100%;
+    height:0;
+    border-radius:0;
+    transition-duration:1s;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    border-bottom:2px solid white;
+  }
+  /*to indicate that the descriptions on the cards will appear with mouse hover.*/
+  .info{
+    position:relative;
+    background-color:var(--color-black);
+    border:3px groove black;
+    border-radius:0 0 5px 5px;
+    padding:3px;
+    opacity:0.7;
+    text-align:center;
+  }
+  .cardxDesc{
+    color:white;
+    opacity:0;
+    transition-duration:0.2s;
+    transition-delay:0.2s;
+    margin:20px 40px;
+    background-color:black;
+    border-radius:10px;
+    border:2px groove gold;
+    padding:10px;
+  }
+  .cardx:hover .cardxDesc{
+    transition-duration:linear;
+    opacity:1;
+    transform:scale(1.08);
+  }
+  
+  .cardx:hover .cardxName{
+    color:gold;
+    border-top:3px groove gold;
+    border-bottom:3px groove gold;
+  }
+  .cardx:hover .info{
+    display:none;
+  }
+  .cardx:hover .cardxDescBg{
+    transition-duration:1s ease;
+    height:360px;
+    border-radius:0 0 1em 1em;
+  }
+  /*abbrevation class specifies*/
+  abbr{
+    text-decoration:none;
+    color:aquamarine;
+    cursor:pointer;
+  }
+  footer{
+    background-color:var(--color-black);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+  }
+  footer img{
+    width:30px;
+    margin:15px;
+    background-color:wheat;
+    border-radius:10px;
+    padding:5px;
+    border:2px ridge var(--color-blue);
+  }
+  footer img:hover{
+    border: 3px ridge gold;
+    padding:4px;
+  }
+  
+  /*media quaries max-width:1100px*/
+  
+  @media screen and (max-width:1100px){
+    body::after{
+      background-size:250%; 
+    }
+    .menuMainItems{
+      display:none;
+    }
+    .logo{
+      letter-spacing:2px;
+      font-size:1.4em;
+      margin-left:25px; 
+    }
+    .logoImage{
+      width:25px;
+    }
+    #homeImage{
+      height:450px;
+    }
+    #homeImage::after{  
+      height:450px; 
+    }
+    p{
+      text-indent:15px;
+    }
+    main p, section p, td, th{
+      font-size:0.8rem;
+    }
+    #homeImageText{
+      font-size:1.8rem;
+      left:20px;
+      font-weight:700;
+    }
+    
+    main td div{
+      width:105px;
+      height:68px;
+    }
+    .cardxName{
+      font-size:0.9rem;
+    }
+  }
+  
+  /*media quaries max-width:800px*/
+  
+  @media screen and (max-width:800px){
+    .logo{
+      font-size:1.1em;
+    }
+    #homeImage{
+      height:350px;
+    }
+    #homeImage::after{  
+      height:350px; 
+    }
+    p{
+      text-indent:10px;
+    }
+    #homeImageText{
+      font-size:1.4rem;
+      left:15px;
+      font-weight:600;
+    }
+    
+    .container{
+      flex-direction:column;
+      padding:25px 15px 15px 15px;
+      margin:15px;
+      border:2px solid black;
+      border-top:7px solid black;
+      border-radius:5px;
+    }
+    #fleetHead{
+      padding: 10px;
+      font-size:0.95rem;
+      width:60%;
+      top:59px;
+      left:17px;
+    }
+    .generalInfo{
+      flex-direction:column;
+    }
+    .generalInfo div{
+      width:100%;
+      padding:20px;
+    }
+    .cardxContainer{
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+    }
+    .cardx{
+      background-size:150%;
+    }
+    .cardx:hover{
+      background-size:180%;
+    }
+  }
+  
